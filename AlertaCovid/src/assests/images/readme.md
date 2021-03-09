@@ -1,0 +1,1 @@
+images style for the app
