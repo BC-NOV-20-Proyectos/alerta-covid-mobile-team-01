@@ -53,7 +53,6 @@ export const SigninStyles = StyleSheet.create({
       color: colors.red
   },
   forgot: {
-      
     alignItems: 'center'
   },
   forgotText: {
@@ -62,4 +61,5 @@ export const SigninStyles = StyleSheet.create({
     fontWeight: '900',
     bottom: 20
   }
+  
 });
