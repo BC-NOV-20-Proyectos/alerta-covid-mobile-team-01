@@ -3,7 +3,7 @@ import {
   View,
   Text,
 } from 'react-native';
-import Welcome from './screens/Welcome'
+import Welcome from './screens/SignIn'
 
 const Root = () => {
   return (
