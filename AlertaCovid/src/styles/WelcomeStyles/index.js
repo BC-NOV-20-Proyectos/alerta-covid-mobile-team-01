@@ -54,4 +54,5 @@ export const WelcomeStyles = StyleSheet.create({
         borderRadius: 13,
         padding: 20
     }
+    
 })

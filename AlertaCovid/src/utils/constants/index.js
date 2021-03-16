@@ -4,4 +4,6 @@ export const constants = {
     Started: 'GET STARTED',
     SignIn: 'Sign In',
     ForgotPassword: 'Forgot password?'
+
 }
+
