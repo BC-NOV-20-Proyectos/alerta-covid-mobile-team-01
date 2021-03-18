@@ -1,5 +1,5 @@
 import React from 'react';
-import Welcome from './screens/SignIn'
+import Welcome from './screens/Home'
 
 const Root = () => {
   return (
