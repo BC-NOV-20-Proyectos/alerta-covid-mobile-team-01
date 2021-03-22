@@ -3,7 +3,12 @@ export const constants = {
     WelcomeTitle2: 'COVID-ALERT',
     Started: 'GET STARTED',
     SignIn: 'Sign In',
-    ForgotPassword: 'Forgot password?'
+    ForgotPassword: 'Forgot password?',
+    Hello: 'Hello,',
+    name: 'name',
+    Stay: 'STAY HOME',
+    Prevention1: 'Take preventive measures',
+    Prevention2 : 'against possible infenction.'
 
 }
 
