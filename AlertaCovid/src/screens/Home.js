@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Image} from 'react-native';
 import {HomeStyles} from '../styles';
 import StayHome from '../components/atoms/HomeAtoms/StayHome';
 import HomeTitle from '../components/atoms/HomeAtoms/HomeTitle';
