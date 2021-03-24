@@ -8,7 +8,15 @@ export const constants = {
     name: 'name',
     Stay: 'STAY HOME',
     Prevention1: 'Take preventive measures',
-    Prevention2 : 'against possible infenction.'
+    Prevention2 : 'against possible infenction.',
+    location: 'Location',
+    symptoms: 'Symptoms',
+    result: 'Result',
+    code: 'Code QR',
+    nombre: 'Nombre, ',
+    what: 'what',
+    symptomsYouHave: 'symptoms do you',
+    have: 'have?'
 
 }
 

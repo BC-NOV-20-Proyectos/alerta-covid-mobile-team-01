@@ -4,6 +4,7 @@ import {HomeStyles} from '../styles';
 import StayHome from '../components/atoms/HomeAtoms/StayHome';
 import HomeTitle from '../components/atoms/HomeAtoms/HomeTitle';
 import CircleButton from '../components/atoms/HomeAtoms/CirlceButton';
+import {constants} from '../utils';
 const Home = () => {
   return (
     <View style={HomeStyles.container}>
@@ -19,12 +20,12 @@ const Home = () => {
       <View style={HomeStyles.subContainer}>
         <StayHome />
         <View style={HomeStyles.circleBtnContainer}>
-          <CircleButton imageIcon={'location'} />
-          <CircleButton imageIcon={'heart'} />
+          <CircleButton imageIcon={'location'} title={constants.location} />
+          <CircleButton imageIcon={'heart'} title={constants.symptoms} />
         </View>
         <View style={HomeStyles.circleBtnContainer}>
-          <CircleButton imageIcon={'test'} />
-          <CircleButton imageIcon={'qrcode'} />
+          <CircleButton imageIcon={'test'} title={constants.result} />
+          <CircleButton imageIcon={'qrcode'} title={constants.code} />
         </View>
       </View>
     </View>
