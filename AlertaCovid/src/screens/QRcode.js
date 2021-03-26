@@ -1,12 +1,12 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import {View, Text} from 'react-native';
 
 const QRcode = () => {
-    return (
-        <View>
-            <Text>QR CODE</Text>
-        </View>
-    )
-}
+  return (
+    <View>
+      <Text>QR CODE</Text>
+    </View>
+  );
+};
 
-export default QRcode
+export default QRcode;

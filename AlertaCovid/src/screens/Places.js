@@ -1,12 +1,12 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import {View, Text} from 'react-native';
 
 const Places = () => {
-    return (
-        <View>
-            <Text>Places</Text>
-        </View>
-    )
-}
+  return (
+    <View>
+      <Text>Places</Text>
+    </View>
+  );
+};
 
-export default Places
+export default Places;
