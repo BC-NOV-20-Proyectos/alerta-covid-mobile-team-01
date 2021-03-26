@@ -4,3 +4,5 @@ const filterSymptoms = (symptoms, id, newValue, title) => {
 };
 
 export {filterSymptoms};
+
+

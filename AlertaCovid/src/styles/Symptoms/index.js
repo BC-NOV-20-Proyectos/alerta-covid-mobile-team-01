@@ -78,4 +78,5 @@ export const SymptomsStyles = StyleSheet.create({
     alignContent: 'center',
     margin: 10
   }
+  
 });
