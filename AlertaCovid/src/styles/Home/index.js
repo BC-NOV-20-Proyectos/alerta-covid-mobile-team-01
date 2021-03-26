@@ -64,22 +64,30 @@ export const HomeStyles = StyleSheet.create({
   textContainer: {left: 40, bottom: 450},
   circleButton: {
     backgroundColor: colors.green,
-    height: 92,
-    width: 92,
-    borderRadius: 92 / 2,
+    height: 60,
+    width: 155,
+    borderRadius: 10,
     alignItems: 'center',
-    justifyContent: 'center',
-    top: 20,
+    justifyContent: 'space-between',
+    marginTop: 15,
+    padding: 10,
+    flexDirection: 'row',
   },
   circleBtnContainer: {
     flexDirection: 'row',
-    width: '80%',
+    width: '90%',
     alignSelf: 'center',
-    justifyContent: 'space-around',
-    marginTop: 20
+    justifyContent: 'space-between',
+    marginTop: 20,
   },
-  circleImg:{
-    height: 50,
-    width: 50
-  }
+  circleImg: {
+    height: 40,
+    width: 40,
+  },
+  btnTitle: {
+    right: 10,
+    fontSize: 15,
+    color: colors.white,
+    fontWeight: 'bold'
+  },
 });

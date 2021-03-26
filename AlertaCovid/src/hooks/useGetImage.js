@@ -21,14 +21,14 @@ export const useGetImage = (imageIcon) => {
       return (
         <Image
           source={require('../assests/images/ubicacioon.png')}
-          style={[HomeStyles.circleImg, {height: 50, width: 37}]}
+          style={[HomeStyles.circleImg, {height: 40, width: 30}]}
         />
       );
     case 'heart':
       return (
         <Image
           source={require('../assests/images/Group.png')}
-          style={[HomeStyles.circleImg, {height: 50, width: 58}]}
+          style={[HomeStyles.circleImg, {height: 40, width: 48}]}
         />
       );
     default:

@@ -1,11 +1,12 @@
 import React from 'react';
-import {TouchableOpacity} from 'react-native';
+import {TouchableOpacity, Text} from 'react-native';
 import {HomeStyles} from '../../../styles';
 import {useGetImage} from '../../../hooks';
-const CirlceButton = ({imageIcon}) => {
+const CirlceButton = ({imageIcon, title}) => {
   return (
     <TouchableOpacity style={HomeStyles.circleButton}>
       {useGetImage(imageIcon)}
+      <Text style={HomeStyles.btnTitle} >{title}</Text>
     </TouchableOpacity>
   );
 };

@@ -4,7 +4,7 @@ import {WelcomeStyles, colors} from '../styles';
 import ButtonStart from '../components/atoms/Button';
 import WelcomeLogo from '../components/molecules/WelcomeLogo';
 import {constants} from '../utils';
-const Welcome = () => {
+const Welcome = ({navigation}) => {
   return (
     <View style={WelcomeStyles.container}>
       <WelcomeLogo />
@@ -20,7 +20,12 @@ const Welcome = () => {
         source={require('../assests/images/Virus-amico2.png')}
         style={WelcomeStyles.virusImage3}
       />
-      <ButtonStart color={colors.green} title={constants.Started} />
+      <ButtonStart
+        color={colors.green}
+        title={constants.Started}
+        navigation={navigation}
+        RouteToGo="SignIn"
+      />
       <Image
         source={require('../assests/images/Virus-amico.png')}
         style={WelcomeStyles.virusImage}
