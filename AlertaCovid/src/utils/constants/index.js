@@ -16,7 +16,8 @@ export const constants = {
     nombre: 'Nombre, ',
     what: 'what',
     symptomsYouHave: 'symptoms do you',
-    have: 'have?'
+    have: 'have?',
+    submit: 'Submit'
 
 }
 
