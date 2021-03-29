@@ -17,7 +17,15 @@ export const constants = {
     what: 'what',
     symptomsYouHave: 'symptoms do you',
     have: 'have?',
-    submit: 'Submit'
+    submit: 'Submit',
+    DateOfTest: 'Date the test was done',
+    DateOfResult: 'Result date',
+    TypeOfTest: 'Type of test',
+    TestResult: 'Test result',
+    SymptomsDayTest: 'Did you have symptoms on the day of the test?',
+    result: 'Test result'
+
+     
 
 }
 
