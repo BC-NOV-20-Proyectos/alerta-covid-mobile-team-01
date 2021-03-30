@@ -3,10 +3,10 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import {constants} from '../../../utils';
 import {ResultStyles} from '../../../styles';
 import DateTimePicker from '@react-native-community/datetimepicker';
-import moment from 'moment'
+import moment from 'moment';
 
 const DateResult = () => {
-  const [date, setDate] = useState(new Date(1598051730000));
+  const [date, setDate] = useState();
   const [show, setShow] = useState(false);
   return (
     <View style={ResultStyles.QuestionContainer}>
@@ -24,9 +24,8 @@ const DateResult = () => {
           is24Hour={true}
           display="default"
           onChange={(e) => {
-            console.log(e.nativeEvent.timestamp);
             setShow(false);
-            setDate(e.nativeEvent.timestamp)
+            setDate(e.nativeEvent.timestamp);
           }}
         />
       )}
