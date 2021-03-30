@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
-import {ResultStyles} from '../../../styles'
+import {ResultStyles} from '../../../styles';
 import {constants} from '../../../utils/constants';
 
 const Submit = ({symptoms}) => {
