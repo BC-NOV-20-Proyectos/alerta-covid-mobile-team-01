@@ -14,7 +14,9 @@ const TypeOfTest = () => {
           selectedValue={selectedLanguage}
           onValueChange={(itemValue) => setSelectedLanguage(itemValue)}>
           <Picker.Item label="PCR" value="PCR" />
-          <Picker.Item label="Another" value="Another" />
+          <Picker.Item label="Test antigenico" value="antigenico" />
+          <Picker.Item label="Test serologico" value="serologico" />
+          <Picker.Item label="Test fast" value="fast" />
         </Picker>
       </TouchableOpacity>
     </View>
