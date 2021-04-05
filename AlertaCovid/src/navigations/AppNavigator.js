@@ -24,7 +24,7 @@ export const AppNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Places"
+        name="Test"
         component={Places}
         options={{
           tabBarIcon: ({color}) => (
