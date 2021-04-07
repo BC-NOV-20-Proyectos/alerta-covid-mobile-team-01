@@ -24,4 +24,5 @@ export const constants = {
   TestResult: 'Test result',
   SymptomsDayTest: 'Did you have symptoms on the day of the test?',
   result: 'Test result',
+  Historial: 'Historial'
 };
