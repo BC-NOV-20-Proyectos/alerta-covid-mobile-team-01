@@ -7,6 +7,8 @@ import Home from '../screens/Home';
 import Symptoms from '../screens/Symptoms';
 import QRcode from '../screens/QRcode';
 import Places from '../screens/Places';
+import {ScreenNavigation} from '../navigations/Navigation'
+
 export const AppNavigator = () => {
   return (
     <Tab.Navigator
@@ -16,7 +18,7 @@ export const AppNavigator = () => {
       barStyle={{backgroundColor: colors.white}}>
       <Tab.Screen
         name="Home"
-        component={Home}
+        component={ScreenNavigation}
         options={{
           tabBarIcon: ({color}) => (
             <AntDesign name="home" color={color} size={26} />
