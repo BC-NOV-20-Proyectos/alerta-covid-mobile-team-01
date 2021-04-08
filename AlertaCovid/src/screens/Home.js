@@ -5,7 +5,7 @@ import StayHome from '../components/atoms/HomeAtoms/StayHome';
 import HomeTitle from '../components/atoms/HomeAtoms/HomeTitle';
 import CircleButton from '../components/atoms/HomeAtoms/CirlceButton';
 import {constants} from '../utils';
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View style={HomeStyles.container}>
       <Image
@@ -20,12 +20,32 @@ const Home = () => {
       <View style={HomeStyles.subContainer}>
         <StayHome />
         <View style={HomeStyles.circleBtnContainer}>
-          <CircleButton imageIcon={'location'} title={constants.location} />
-          <CircleButton imageIcon={'heart'} title={constants.symptoms} />
+          <CircleButton
+            imageIcon={'location'}
+            title={constants.location}
+            navigation={navigation}
+            routeToGo={'Location'}
+          />
+          <CircleButton
+            imageIcon={'heart'}
+            title={constants.symptoms}
+            navigation={navigation}
+            routeToGo={'Symptoms'}
+          />
         </View>
         <View style={HomeStyles.circleBtnContainer}>
-          <CircleButton imageIcon={'test'} title={constants.result} />
-          <CircleButton imageIcon={'qrcode'} title={constants.code} />
+          <CircleButton
+            imageIcon={'test'}
+            title={constants.result}
+            navigation={navigation}
+            routeToGo={'Test'}
+          />
+          <CircleButton
+            imageIcon={'qrcode'}
+            title={constants.code}
+            navigation={navigation}
+            routeToGo={'QR'}
+          />
         </View>
       </View>
     </View>
