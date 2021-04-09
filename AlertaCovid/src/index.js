@@ -1,13 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {AppNavigator, AuthNavigator} from './navigations';
-const Root = () => {
-  const [user, setUser] = useState(null);
+import {connect} from 'react-redux';
+
+const Root = ({Auth}) => {
   return (
     <NavigationContainer>
-      {user ? <AuthNavigator /> : <AppNavigator />}
+      {!Auth.user ? <AuthNavigator /> : <AppNavigator />}
     </NavigationContainer>
   );
 };
-
-export default Root;
+const mapStateToProps = (state) => {
+  return {
+    Auth: state.AuthReducer,
+  };
+};
+export default connect(mapStateToProps, null)(Root);

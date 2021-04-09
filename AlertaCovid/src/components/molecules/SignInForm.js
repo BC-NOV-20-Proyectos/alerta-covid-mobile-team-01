@@ -4,9 +4,11 @@ import {SigninStyles} from '../../styles';
 import {constants} from '../../utils';
 import ArrowButton from '../atoms/ArrowButton';
 import ForgotPassword from '../atoms/ForgotPassword';
+import {loginFetch} from '../../redux/actions/AuthActions';
+import {connect} from 'react-redux';
 import * as Yup from 'yup';
 import {Formik} from 'formik';
-const SignInForm = () => {
+const SignInForm = ({loginFetch}) => {
   const initialValues = {
     email: '',
     password: '',
@@ -21,8 +23,8 @@ const SignInForm = () => {
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
-        onSubmit={(values) => console.log(values)}>
-        {({errors, handleChange, values, handleSubmit, touched}) => (
+        onSubmit={(values) => loginFetch(values.email, values.password)}>
+        {({errors, handleChange, values, handleSubmit}) => (
           <View>
             <ArrowButton handleSubmit={handleSubmit} />
             <TextInput
@@ -51,5 +53,7 @@ const SignInForm = () => {
     </View>
   );
 };
-
-export default SignInForm;
+const mapDispatchToProps = {
+  loginFetch,
+};
+export default connect(null, mapDispatchToProps)(SignInForm);
