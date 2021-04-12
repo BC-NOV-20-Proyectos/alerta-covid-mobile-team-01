@@ -1,7 +1,8 @@
-import {LOGIN, LOGIN_FAILURE} from '../types';
+import {LOGIN, LOGIN_FAILURE, LOGOUT, LOGOUT_FAILURE} from '../types';
 const initalState = {
   user: null,
 };
+
 function AuthReducer(state = initalState, action) {
   switch (action.type) {
     case LOGIN:
@@ -10,6 +11,12 @@ function AuthReducer(state = initalState, action) {
       };
     case LOGIN_FAILURE:
       return initalState;
+    case LOGOUT:
+      return {
+        user: null,
+      };
+    case LOGOUT_FAILURE:
+      return state;
     default:
       return state;
   }
