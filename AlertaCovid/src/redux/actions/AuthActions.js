@@ -31,7 +31,7 @@ export function loginFetch(email, password) {
       const res = await axios.post(
         `${loginApi}api_user[email]=${email}&api_user[password]=${password}`,
       );
-      console.log(res.data);
+
       dispatch(login(res.data));
     } catch (err) {
       dispatch(login_failure());
@@ -42,12 +42,12 @@ export function loginFetch(email, password) {
 export function logoutFetch(token) {
   return async (dispatch) => {
     try {
-      const res = await axios.delete(logOutApi, {
+      await axios.delete(logOutApi, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
-      console.log(res.data);
+
       dispatch(logout());
     } catch (err) {
       dispatch(logout_failure());
