@@ -88,6 +88,12 @@ export const HomeStyles = StyleSheet.create({
     right: 10,
     fontSize: 15,
     color: colors.white,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
+  logOutBtn: {
+    bottom: 1180,
+    left: 350,
+  },
+
 });
+

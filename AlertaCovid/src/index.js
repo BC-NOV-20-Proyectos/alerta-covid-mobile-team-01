@@ -15,4 +15,5 @@ const mapStateToProps = (state) => {
     Auth: state.AuthReducer,
   };
 };
+
 export default connect(mapStateToProps, null)(Root);

@@ -4,6 +4,7 @@ import {HomeStyles} from '../styles';
 import StayHome from '../components/atoms/HomeAtoms/StayHome';
 import HomeTitle from '../components/atoms/HomeAtoms/HomeTitle';
 import CircleButton from '../components/atoms/HomeAtoms/CirlceButton';
+import LogOutBtn from '../components/atoms/HomeAtoms/LogOutBtn';
 import {constants} from '../utils';
 const Home = ({navigation}) => {
   return (
@@ -48,6 +49,7 @@ const Home = ({navigation}) => {
           />
         </View>
       </View>
+      <LogOutBtn />
     </View>
   );
 };
