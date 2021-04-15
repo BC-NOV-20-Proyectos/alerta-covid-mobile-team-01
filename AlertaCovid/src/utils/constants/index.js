@@ -31,4 +31,5 @@ export const constants = {
   sistomatico: 'Sintómaticos:',
   negativo: 'Covid-negativo:',
   positivo: 'Covid-Positivo:',
+  done: 'Done!'
 };
