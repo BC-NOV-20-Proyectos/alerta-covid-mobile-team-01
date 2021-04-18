@@ -6,7 +6,7 @@ import {persistStore, persistReducer} from 'redux-persist';
 const persitConfig = {
   key: 'root',
   storage: AyncStorage,
-  whitelist: ['AuthReducer'],
+  whitelist: ['AuthReducer', 'HealthReducer'],
 };
 
 const persistedReducer = persistReducer(persitConfig, rootReducer);

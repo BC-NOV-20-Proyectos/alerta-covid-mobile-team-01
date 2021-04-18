@@ -11,6 +11,7 @@ const Root = ({Auth}) => {
   );
 };
 const mapStateToProps = (state) => {
+  console.log(state.HealthReducer);
   return {
     Auth: state.AuthReducer,
   };
