@@ -1,9 +1,9 @@
 import {LOGIN, LOGIN_FAILURE, LOGOUT, LOGOUT_FAILURE} from '../types';
-const initalState = {
+const initialState = {
   user: null,
 };
 
-function AuthReducer(state = initalState, action) {
+function AuthReducer(state = initialState, action) {
   switch (action.type) {
     case LOGIN:
       return {
