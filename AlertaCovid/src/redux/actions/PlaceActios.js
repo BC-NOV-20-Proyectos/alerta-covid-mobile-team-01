@@ -25,4 +25,3 @@ export function PlaceFetch(token) {
       }
     };
   }
-

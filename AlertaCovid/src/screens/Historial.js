@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import {constants} from '../utils';
 import {HistoriaStyles} from '../styles';
 import PlaceCard from '../components/atoms/HistorialAtoms/PlaceCard';
@@ -11,18 +11,19 @@ const Historial = ({Token,PlaceFetch}) => {
         <View>
             <Image source= {require('../assests/images/maps.png')} style={HistoriaStyles.imageBG}></Image>
             <Text style={HistoriaStyles.TextTitle}>{constants.Historial}</Text>
-            <PlaceCard></PlaceCard>
+            <View ></View>
+            <TouchableOpacity onPress= {() => PlaceFetch(Token)}><Text>HOOOOOO</Text></TouchableOpacity>
         </View>
     )
 };
 
 const mapStateToProps = (state) => {
-    return {
-        Token: state.HealthReducer.user.token,
+   return {
+       Token: state.token
     }
 }
+
 const mapDispatchToProps = {
     PlaceFetch,
 }
-
 export default connect(mapStateToProps, mapDispatchToProps)(Historial)
