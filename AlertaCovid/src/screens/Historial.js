@@ -7,24 +7,33 @@ import {connect} from 'react-redux';
 import {PlaceFetch} from '../redux/actions/PlaceActios';
 
 const Historial = ({Token, PlaceFetch, places}) => {
-  console.log('places', places)
   useEffect(() => {
     PlaceFetch(Token);
   }, []);
 
-  const data = places.map((place) => {    
-    return(
+  const data = places.map((place) => {
+    return (
       <View key={place.name}>
         <View style={HistoriaStyles.formContainer}>
           <Text style={HistoriaStyles.TextTitlePlace}>{place.institute}</Text>
-          <Text style={HistoriaStyles.TextInf}>{`Area: ${place.area}`}</Text>           
-          <Text style={HistoriaStyles.TextInf}>{`Lugar: ${place.name}`}</Text> 
-          <Text style={HistoriaStyles.TextInf}>{`Sintomaticos: ${place.symptomatic}`}</Text> 
-          <Text style={HistoriaStyles.TextInf}>{`Covid Negativo: ${place.covid_negative}`}</Text>  
-          <Text style={HistoriaStyles.TextInf}>{`Covid Positivo: ${place.covid_positive}`}</Text> 
+          <Text style={HistoriaStyles.TextInf}>{`Area: ${place.area}`}</Text>
+          <Text style={HistoriaStyles.TextInf}>{`Lugar: ${place.name}`}</Text>
+          <Text
+            style={
+              HistoriaStyles.TextInf
+            }>{`Sintomaticos: ${place.symptomatic}`}</Text>
+          <Text
+            style={
+              HistoriaStyles.TextInf
+            }>{`Covid Negativo: ${place.covid_negative}`}</Text>
+          <Text
+            style={
+              HistoriaStyles.TextInf
+            }>{`Covid Positivo: ${place.covid_positive}`}</Text>
         </View>
       </View>
-    )});
+    );
+  });
 
   return (
     <View style={HistoriaStyles.Container}>
@@ -37,11 +46,10 @@ const Historial = ({Token, PlaceFetch, places}) => {
   );
 };
 
-
 const mapStateToProps = (state) => {
   return {
     Token: state.AuthReducer.user.token,
-    places: state.PlaceReducer.places
+    places: state.PlaceReducer.places,
   };
 };
 
