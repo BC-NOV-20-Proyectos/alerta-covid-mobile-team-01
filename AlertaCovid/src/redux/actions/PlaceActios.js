@@ -1,11 +1,11 @@
 import axios from 'axios';
-import {ADD_PLACE} from '../types';
+import {NEW_PLACE} from '../types';
 import {GetPlace} from '../../utils/constants/api';
 
 
 function place(place){
     return {
-        type: ADD_PLACE,
+        type: NEW_PLACE,
         payload: place
     }
 }
@@ -18,8 +18,8 @@ export function PlaceFetch(token) {
             Authorization: `Bearer ${token}`,
           },
         });
-        console.log(res.data)
-        dispatch(place(res.data));
+        console.log(res.data.data)
+        dispatch(place(res.data.data));
       } catch (err) {
         console.error(err)
       }

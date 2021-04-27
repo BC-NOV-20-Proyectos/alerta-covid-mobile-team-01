@@ -3,10 +3,10 @@ import {colors} from '../colors';
 
 export const HistoriaStyles = StyleSheet.create({
   TextTitle: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
-    bottom: 500,
+    bottom: 420,
   },
   imageBG: {
     alignSelf: 'center',
@@ -14,23 +14,26 @@ export const HistoriaStyles = StyleSheet.create({
     top: 50,
   },
   Container: {
+    alignContent: 'flex-start',
     height: 500,
-    bottom: 450,
+    bottom: 50,
     width: '95%',
     alignSelf: 'center',
   },
   TextTitlePlace: {
     fontWeight: 'bold',
     fontSize: 18,
-    color: colors.white,
+    color: colors.black,
     textAlign: 'center',
     opacity: 9,
   },
   formContainer: {
     backgroundColor: colors.lightgreen,
-    opacity: 0.8,
+    opacity: 0.9,
     borderRadius: 10,
     padding: 20,
+    bottom: 400,
+    margin: 10
   },
   TextInf: {
     textAlign: 'left',
