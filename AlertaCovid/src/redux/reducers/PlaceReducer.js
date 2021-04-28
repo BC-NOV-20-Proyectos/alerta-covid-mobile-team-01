@@ -11,7 +11,6 @@ function PlaceReducer(state = initialState, action) {
         places: action.payload,
       };
     default:
-      // need this for default case
       return state;
   }
 }
