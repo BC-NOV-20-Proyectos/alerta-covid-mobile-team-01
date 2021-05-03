@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import {View, Text, Image} from 'react-native';
 import {constants} from '../utils';
 import {HistoriaStyles} from '../styles';
-import PlaceCard from '../components/atoms/HistorialAtoms/PlaceCard';
 import {connect} from 'react-redux';
 import {PlaceFetch} from '../redux/actions/PlaceActios';
 

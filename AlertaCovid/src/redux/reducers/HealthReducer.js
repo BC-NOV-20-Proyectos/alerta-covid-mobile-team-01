@@ -1,7 +1,7 @@
-import {SYMPTOMS_TRUE, TEST_POSITIVE, ADD_PLACE} from '../types';
+import {SYMPTOMS_TRUE, TEST_POSITIVE, ADD_PLACE, REPORT} from '../types';
 const initialState = {
-  symptoms: false,
-  test: null,
+  symptomatic: false,
+  covid_positive: null,
   places: [],
 };
 
@@ -10,17 +10,23 @@ function HealthReducer(state = initialState, action) {
     case SYMPTOMS_TRUE:
       return {
         ...state,
-        symptoms: true,
+        symptomatic: true,
       };
     case TEST_POSITIVE:
       return {
         ...state,
-        test: 'positive',
+        covid_positive: 'positive',
       };
     case ADD_PLACE:
       return {
         ...state,
         places: [...state.places, action.payload],
+      };
+    case REPORT:
+      return {
+        symptomatic: false,
+        covid_positive: null,
+        places: [],
       };
 
     default:
