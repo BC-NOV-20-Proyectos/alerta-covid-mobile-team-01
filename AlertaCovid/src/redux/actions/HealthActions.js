@@ -27,7 +27,6 @@ export function reportFetch(token, info) {
           'Content-Type': 'application/json',
         },
       });
-
       dispatch(report());
     } catch (err) {
       console.error(err);

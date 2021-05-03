@@ -1,7 +1,7 @@
-const loginApi = 'https://hidden-cliffs-21927.herokuapp.com/api/user/sign_in?';
-const logOutApi = 'https://hidden-cliffs-21927.herokuapp.com/api/user/sign_out';
-const GetPlace =
-  'https://hidden-cliffs-21927.herokuapp.com/api/reports/place_reports';
-const reportApi = 'https://hidden-cliffs-21927.herokuapp.com/api/incident';
+const url_API = 'https://hidden-cliffs-21927.herokuapp.com/api/';
+const loginApi = `${url_API}/user/sign_in?`;
+const logOutApi = `${url_API}/user/sign_out`;
+const GetPlace = `${url_API}/reports/place_reports`;
+const reportApi = `${url_API}/incident`;
 
 export {loginApi, logOutApi, GetPlace, reportApi};
