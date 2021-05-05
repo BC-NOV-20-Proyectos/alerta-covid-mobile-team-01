@@ -33,5 +33,8 @@ export const constants = {
   positivo: 'Covid-Positivo:',
   done: 'Done!',
   successfully: 'Submited successfully',
-  message: 'Your data has been submited successfully'
+  message: 'Your data has been submited successfully',
+  ForgotPassword: 'Forgot your password?',
+  MessagePassword: 'Enter your email to reset your password',
+  send: 'Send',
 };
