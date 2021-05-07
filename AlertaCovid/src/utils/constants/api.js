@@ -1,4 +1,4 @@
-const url_API = 'https://hidden-cliffs-21927.herokuapp.com/api/';
+const url_API = 'https://hidden-cliffs-21927.herokuapp.com/api';
 const loginApi = `${url_API}/user/sign_in?`;
 const logOutApi = `${url_API}/user/sign_out`;
 const GetPlace = `${url_API}/reports/place_reports`;

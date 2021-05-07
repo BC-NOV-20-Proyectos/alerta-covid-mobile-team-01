@@ -31,8 +31,11 @@ export function loginFetch(email, password) {
       const res = await axios.post(
         `${loginApi}api_user[email]=${email}&api_user[password]=${password}`,
       );
-
-      dispatch(login(res.data));
+      if(res.data.token == null){
+        throw "Error login";
+      }else{
+        dispatch(login(res.data));
+      }
     } catch (err) {
       dispatch(login_failure());
     }
