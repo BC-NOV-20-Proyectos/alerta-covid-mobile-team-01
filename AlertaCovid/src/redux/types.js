@@ -7,3 +7,4 @@ export const TEST_POSITIVE = 'TEST_POSITIVE';
 export const ADD_PLACE = 'ADD_PLACE';
 export const NEW_PLACE = 'NEW_PLACE';
 export const REPORT = 'REPORT'
+export const RECOVERY = 'RECOVERY_PASSWORD'

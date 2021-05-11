@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {LOGIN, LOGIN_FAILURE, LOGOUT, LOGOUT_FAILURE} from '../types';
 import {loginApi, logOutApi} from '../../utils/constants/api';
+
 function login(user) {
   return {
     type: LOGIN,
@@ -31,9 +32,14 @@ export function loginFetch(email, password) {
       const res = await axios.post(
         `${loginApi}api_user[email]=${email}&api_user[password]=${password}`,
       );
-
-      dispatch(login(res.data));
-    } catch (err) {
+      if(res.data.token === null){
+        dispatch(login_failure());
+        //alert('Email o password incorrectos')
+      }else{
+        dispatch(login(res.data));
+      }
+    } 
+    catch(err){
       dispatch(login_failure());
     }
   };
@@ -47,7 +53,6 @@ export function logoutFetch(token) {
           Authorization: `Bearer ${token}`,
         },
       });
-
       dispatch(logout());
     } catch (err) {
       dispatch(logout_failure());

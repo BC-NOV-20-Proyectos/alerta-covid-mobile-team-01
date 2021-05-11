@@ -60,6 +60,10 @@ export const SigninStyles = StyleSheet.create({
     fontSize: 22,
     fontWeight: '900',
     bottom: 20
+  },
+  error: {
+    fontSize: 20,
+    
   }
   
 });
