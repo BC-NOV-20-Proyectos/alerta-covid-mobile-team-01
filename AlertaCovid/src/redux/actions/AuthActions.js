@@ -34,7 +34,6 @@ export function loginFetch(email, password) {
       );
       if(res.data.token === null){
         dispatch(login_failure());
-        //alert('Email o password incorrectos')
       }else{
         dispatch(login(res.data));
       }
