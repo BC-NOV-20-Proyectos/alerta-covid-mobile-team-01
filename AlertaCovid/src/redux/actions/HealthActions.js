@@ -12,7 +12,12 @@ export function test_positive() {
     type: TEST_POSITIVE,
   };
 }
-
+export function add_place(place) {
+  return {
+    type: ADD_PLACE,
+    payload: place,
+  };
+}
 function report() {
   return {
     type: REPORT,

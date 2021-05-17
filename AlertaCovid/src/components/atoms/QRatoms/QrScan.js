@@ -1,18 +1,20 @@
 'use strict';
 
 import React, {Component} from 'react';
-
-import {Text, TouchableOpacity, Linking} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import {constants} from '../../../utils/constants';
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import {RNCamera} from 'react-native-camera';
 import {QRstyles} from '../../../styles/QRcode';
-
-export default class ScanScreen extends Component {
+import {connect} from 'react-redux';
+import {add_place} from './../../../redux/actions/HealthActions';
+class ScanScreen extends Component {
   onSuccess = (e) => {
-    Linking.openURL(e.data).catch((err) =>
-      console.error('An error occured', err),
-    );
+    console.log(e.data);
+    alert(e.data);
+    if (!this.props.Places.includes(e.data)) {
+      this.props.add_place(e.data);
+    }
   };
 
   render() {
@@ -29,3 +31,10 @@ export default class ScanScreen extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  return {
+    Places: state.HealthReducer.places,
+  };
+};
+const mapDispatchToProps = {add_place};
+export default connect(mapStateToProps, mapDispatchToProps)(ScanScreen);
