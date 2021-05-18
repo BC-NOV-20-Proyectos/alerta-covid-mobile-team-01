@@ -45,7 +45,7 @@ export const HomeStyles = StyleSheet.create({
     fontSize: 30,
   },
   nameText: {
-    fontSize: 30,
+    fontSize: 20,
     fontWeight: 'bold',
   },
   blob1: {
@@ -61,7 +61,7 @@ export const HomeStyles = StyleSheet.create({
     left: 250,
     bottom: 250,
   },
-  textContainer: {left: 40, bottom: 450},
+  textContainer: {left: 40, bottom: 460},
   circleButton: {
     backgroundColor: colors.green,
     height: 60,
@@ -91,7 +91,7 @@ export const HomeStyles = StyleSheet.create({
     fontWeight: 'bold',
   },
   logOutBtn: {
-    bottom: 1180,
+    bottom: 1170,
     left: 350,
   },
 

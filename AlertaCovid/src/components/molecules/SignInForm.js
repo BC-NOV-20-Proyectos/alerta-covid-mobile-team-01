@@ -29,7 +29,6 @@ const SignInForm = ({loginFetch}) => {
           <View>
             <ArrowButton handleSubmit={handleSubmit} />
             <TextInput
-              showSoftInputOnFocus={false}
               onChangeText={handleChange('email')}
               value={values.email}
               style={SigninStyles.input}
@@ -39,7 +38,6 @@ const SignInForm = ({loginFetch}) => {
               <Text style={SigninStyles.errorMessage}>{errors.email}</Text>
             )}
             <TextInput
-              showSoftInputOnFocus={false}
               onChangeText={handleChange('password')}
               value={values.password}
               style={SigninStyles.input}
