@@ -20,6 +20,7 @@ class ScanScreen extends Component {
   render() {
     return (
       <QRCodeScanner
+        style={QRstyles.Container}
         onRead={this.onSuccess}
         flashMode={RNCamera.Constants.FlashMode.torch}
         bottomContent={

@@ -15,11 +15,11 @@ export const SigninStyles = StyleSheet.create({
   formContainer: {
     backgroundColor: colors.white,
     top: -470,
-    height: '55%',
+    height: '70%',
     borderTopLeftRadius: 47,
     borderTopRightRadius: 47,
     paddingHorizontal: 20,
-    paddingVertical: 30,
+    paddingVertical: 50,
   },
   arrowBtn: {
     backgroundColor: colors.green,
@@ -45,7 +45,8 @@ export const SigninStyles = StyleSheet.create({
       bottom: 40,
       left: 10,
       width: '90%',
-      fontSize: 20
+      fontSize: 20,
+      padding: '5%'
   },
   errorMessage: {
       bottom: 50,

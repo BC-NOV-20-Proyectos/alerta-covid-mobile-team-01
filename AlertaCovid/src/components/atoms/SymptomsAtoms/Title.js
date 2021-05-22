@@ -6,7 +6,6 @@ const Title = () => {
   return (
     <View style={SymptomsStyles.title}>
       <View style={SymptomsStyles.TextContainer}>
-        <Text style={SymptomsStyles.nameText}>{constants.nombre}</Text>
         <Text style={SymptomsStyles.text}>{constants.what}</Text>
       </View>
       <View>

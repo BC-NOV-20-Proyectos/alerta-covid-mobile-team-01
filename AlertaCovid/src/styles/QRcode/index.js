@@ -18,4 +18,8 @@ export const QRstyles = StyleSheet.create({
   buttonTouchable: {
     padding: 16,
   },
+  Container:{
+    marginTop: 50,
+    backgroundColor: 'white',
+  }
 });

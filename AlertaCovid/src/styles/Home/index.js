@@ -8,7 +8,7 @@ export const HomeStyles = StyleSheet.create({
   },
   subContainer: {
     backgroundColor: colors.white,
-    bottom: 420,
+    bottom: 370,
     height: '100%',
     borderTopLeftRadius: 47,
     borderTopRightRadius: 47,
@@ -61,7 +61,7 @@ export const HomeStyles = StyleSheet.create({
     left: 250,
     bottom: 250,
   },
-  textContainer: {left: 40, bottom: 460},
+  textContainer: {left: 40, bottom: 410,},
   circleButton: {
     backgroundColor: colors.green,
     height: 60,
@@ -91,8 +91,11 @@ export const HomeStyles = StyleSheet.create({
     fontWeight: 'bold',
   },
   logOutBtn: {
-    bottom: 1170,
     left: 350,
+    alignItems: 'flex-start',
+    alignContent: 'flex-start',
+    alignSelf: 'flex-start',
+    bottom: '165%'
   },
 
 });

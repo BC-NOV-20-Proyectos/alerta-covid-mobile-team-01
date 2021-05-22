@@ -14,7 +14,7 @@ export const constants = {
   result: 'Result',
   code: 'Code QR',
   nombre: 'Nombre, ',
-  what: 'what',
+  what: 'What',
   symptomsYouHave: 'symptoms do you',
   have: 'have?',
   submit: 'Submit',

@@ -3,13 +3,18 @@ import { colors } from "../colors";
 export const WelcomeStyles = StyleSheet.create({
     container: {
         backgroundColor: colors.lightgreen,
-        height: '100%'
+        height: '100%',
+        flex: 1,
+        flexDirection: 'column'    
     },
     virusImage:{
         height: 250,
         width: 230,
-        bottom: 910,
-        left: 170
+        left: 170,
+        alignContent: 'flex-start',
+        alignItems: 'flex-start',
+        alignSelf: 'flex-start',
+        bottom: '80%'
     },
     virusImage1:{
         height: 280,
